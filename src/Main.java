@@ -22,16 +22,25 @@ public class Main {
         }
 
         System.out.println("Задание 3");
-        int capacityCarriage =102;
-        int sittingPlace =60;
-        if (capacityCarriage>=102){
-            System.out.println("Вагон забит");
+        int capacityCarriage = 102;
+        int sittingPlace = 60;
+        int standingPlace = capacityCarriage -sittingPlace;
+        int sittingUsed = 59;
+        int otherPlace=41;
+
+        if (sittingUsed<sittingPlace){
+            System.out.println("Есть еще " + (sittingPlace - sittingUsed) + " сидячих мест");
+        if (sittingUsed ==sittingPlace){
+           System.out.println("Сидячих мест нет");
+       }
+        if (otherPlace<sittingPlace){
+           System.out.println("Есть еще " + (standingPlace - otherPlace + " стоячих мест"));
+       }
+        if (otherPlace==standingPlace){
+            System.out.println("Стоячих мест нет");
         }
-        if (sittingPlace<60){
-            System.out.println("Есть сидячие места");
+
         }
-        if (sittingPlace>=60){
-            System.out.println("Только стоячие места");
         }
-    }
+
 }
