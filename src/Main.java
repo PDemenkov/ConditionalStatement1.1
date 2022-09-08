@@ -10,11 +10,11 @@ public class Main {
         }
 
         System.out.println("Задание 2");
-        int newAge = 7;
-        if (newAge>=7 && newAge<18){
+        int newAge = 19;
+        if (newAge>7){
             System.out.println("Ребенок ходит в школу");
         }
-        if (newAge>=18 && newAge<24){
+        if (newAge>=18){
             System.out.println("Человек уже закончил школу и может отправляться в университет");
         }
         if (newAge>=24){
@@ -22,25 +22,17 @@ public class Main {
         }
 
         System.out.println("Задание 3");
-        int capacityCarriage = 102;
-        int sittingPlace = 60;
-        int standingPlace = capacityCarriage -sittingPlace;
-        int sittingUsed = 59;
-        int otherPlace=41;
-
-        if (sittingUsed<sittingPlace){
-            System.out.println("Есть еще " + (sittingPlace - sittingUsed) + " сидячих мест");
-        if (sittingUsed ==sittingPlace){
-           System.out.println("Сидячих мест нет");
-       }
-        if (otherPlace<sittingPlace){
-           System.out.println("Есть еще " + (standingPlace - otherPlace + " стоячих мест"));
-       }
-        if (otherPlace==standingPlace){
-            System.out.println("Стоячих мест нет");
+        int capacityCarriage =102;
+        int sittingPlace =50;
+        int otherPlace = 40;
+        if (capacityCarriage<=sittingPlace+otherPlace){
+            System.out.println("Вагон забит");
         }
-
+        if (sittingPlace<60){
+            System.out.println("Есть сидячие места");
         }
+        if (sittingPlace>=60){
+            System.out.println("Только стоячие места");
         }
-
+    }
 }
