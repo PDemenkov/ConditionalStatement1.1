@@ -10,16 +10,14 @@ public class Main {
         }
 
         System.out.println("Задание 2");
-        int age1 = 7;
-        int age2 = 18;
-        int age3 = 24;
-        if (age1>=7){
+        int newAge = 7;
+        if (newAge>=7 && newAge<18){
             System.out.println("Ребенок ходит в школу");
         }
-        if (age2>=18){
+        if (newAge>=18 && newAge<24){
             System.out.println("Человек уже закончил школу и может отправляться в университет");
         }
-        if (age3>=24){
+        if (newAge>=24){
             System.out.println("Человек окончил университет и ему пора искать первую работу");
         }
 
